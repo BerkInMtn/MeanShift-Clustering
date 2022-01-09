@@ -1,0 +1,45 @@
+\hypertarget{class_graph}{}\doxysection{Graph Class Reference}
+\label{class_graph}\index{Graph@{Graph}}
+
+
+{\ttfamily \#include $<$Graph.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_graph_ab062e964dc007e83e7beb848af751702}\label{class_graph_ab062e964dc007e83e7beb848af751702}} 
+\mbox{\hyperlink{class_graph_ab062e964dc007e83e7beb848af751702}{Graph}} (\mbox{\hyperlink{class_node}{Node}} \&)
+\begin{DoxyCompactList}\small\item\em Constructor\+: To initialize the first node of the cluster as centroid. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_graph_a040a6be25f5ef7a31e77f62128d779c4}\label{class_graph_a040a6be25f5ef7a31e77f62128d779c4}} 
+void \mbox{\hyperlink{class_graph_a040a6be25f5ef7a31e77f62128d779c4}{set\+New\+Node}} (const \mbox{\hyperlink{class_node}{Node}} \&)
+\begin{DoxyCompactList}\small\item\em Add new node to the cluster. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_graph_ab2d93a5db47220284c5a7185063e2308}\label{class_graph_ab2d93a5db47220284c5a7185063e2308}} 
+void \mbox{\hyperlink{class_graph_ab2d93a5db47220284c5a7185063e2308}{update\+Centroid}} (const \mbox{\hyperlink{class_node}{Node}} \&)
+\begin{DoxyCompactList}\small\item\em Update the centroid after every new point. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_graph_a95c1b4ecdaa0fdb63cb0169eacf30a8f}\label{class_graph_a95c1b4ecdaa0fdb63cb0169eacf30a8f}} 
+vector$<$ \mbox{\hyperlink{class_node}{Node}} $>$ \& \mbox{\hyperlink{class_graph_a95c1b4ecdaa0fdb63cb0169eacf30a8f}{get\+All\+Nodes}} (void)
+\begin{DoxyCompactList}\small\item\em Returns the all nodes for that cluster. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_graph_a9a1ab90fecff180bea21fd9f27b76131}\label{class_graph_a9a1ab90fecff180bea21fd9f27b76131}} 
+\mbox{\hyperlink{class_node}{Node}} \& \mbox{\hyperlink{class_graph_a9a1ab90fecff180bea21fd9f27b76131}{get\+Centroid}} (void)
+\begin{DoxyCompactList}\small\item\em Returns the centroid to use the comparing process in the build\+Cluster method. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_graph_acf00c812f67ccbc512bf395fcf2b4519}\label{class_graph_acf00c812f67ccbc512bf395fcf2b4519}} 
+int \mbox{\hyperlink{class_graph_acf00c812f67ccbc512bf395fcf2b4519}{get\+Number\+Of\+Nodes}} (void) const
+\begin{DoxyCompactList}\small\item\em Returns the number of this cluster. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_graph_aeb562773916ca8867437955cb787d519}\label{class_graph_aeb562773916ca8867437955cb787d519}} 
+void \mbox{\hyperlink{class_graph_aeb562773916ca8867437955cb787d519}{Kruskal}} (void)
+\begin{DoxyCompactList}\small\item\em Kruskal algoritm to get minimum spanning tree. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_graph_a3b5e37a64979171f30f377fa92be9993}\label{class_graph_a3b5e37a64979171f30f377fa92be9993}} 
+\mbox{\hyperlink{class_node}{Node}} \mbox{\hyperlink{class_graph_a3b5e37a64979171f30f377fa92be9993}{find\+Path}} (\mbox{\hyperlink{class_node}{Node}})
+\begin{DoxyCompactList}\small\item\em A utility function for kruskal algorithm. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_graph_a8159376b965c119250332f299e8b72ce}\label{class_graph_a8159376b965c119250332f299e8b72ce}} 
+vector$<$ \mbox{\hyperlink{class_edge}{Edge}} $>$ \mbox{\hyperlink{class_graph_a8159376b965c119250332f299e8b72ce}{get\+M\+ST}} (void) const
+\begin{DoxyCompactList}\small\item\em To store spanning tree edges. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class objects are created in the build\+Cluster funciton \mbox{\hyperlink{class_clustering}{Clustering}} class. It stores clusters points and centroid. After building process to obtain the minimum spanning tree uses Kruskal graph algorithm. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/brkn/\+Desktop/oop\+\_\+project/Graph.\+h\item 
+/home/brkn/\+Desktop/oop\+\_\+project/Graph.\+cpp\end{DoxyCompactItemize}

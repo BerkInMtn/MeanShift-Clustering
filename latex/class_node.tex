@@ -1,0 +1,66 @@
+\hypertarget{class_node}{}\doxysection{Node Class Reference}
+\label{class_node}\index{Node@{Node}}
+
+
+{\ttfamily \#include $<$Node.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_node_ab06173829827089ae80c01c2c19addf2}\label{class_node_ab06173829827089ae80c01c2c19addf2}} 
+\mbox{\hyperlink{class_node_ab06173829827089ae80c01c2c19addf2}{Node}} (double X=0.\+0, double Y=0.\+0)
+\begin{DoxyCompactList}\small\item\em Constructor to set X and Y coordinates, with default values. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_node_a8e5f90802413b9d80d01dcfd53628196}\label{class_node_a8e5f90802413b9d80d01dcfd53628196}} 
+void \mbox{\hyperlink{class_node_a8e5f90802413b9d80d01dcfd53628196}{setX}} (double)
+\begin{DoxyCompactList}\small\item\em Sets the x coordinates. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_node_a49d94cdbfe67f5ff45aeb25d85ca9b99}\label{class_node_a49d94cdbfe67f5ff45aeb25d85ca9b99}} 
+void \mbox{\hyperlink{class_node_a49d94cdbfe67f5ff45aeb25d85ca9b99}{setY}} (double)
+\begin{DoxyCompactList}\small\item\em Sets the y coordinates. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_node_a6df2dfb1b9ab992e00ea4e2d1908fa41}\label{class_node_a6df2dfb1b9ab992e00ea4e2d1908fa41}} 
+double \mbox{\hyperlink{class_node_a6df2dfb1b9ab992e00ea4e2d1908fa41}{getX}} (void) const
+\begin{DoxyCompactList}\small\item\em Returns the x coordinates. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_node_a7b9dc2b251296049b6b6d86ade5c8801}\label{class_node_a7b9dc2b251296049b6b6d86ade5c8801}} 
+double \mbox{\hyperlink{class_node_a7b9dc2b251296049b6b6d86ade5c8801}{getY}} (void) const
+\begin{DoxyCompactList}\small\item\em Returns the x coordinates. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_node_a21c8643081880a2e84f07bc6feecfeee}\label{class_node_a21c8643081880a2e84f07bc6feecfeee}} 
+std\+::string \mbox{\hyperlink{class_node_a21c8643081880a2e84f07bc6feecfeee}{get\+ID}} (void) const
+\begin{DoxyCompactList}\small\item\em Returns a unique ID for every \mbox{\hyperlink{class_node}{Node}} object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_node_a4ad4d58f8fadd4af8dff43aa3e05c3a6}\label{class_node_a4ad4d58f8fadd4af8dff43aa3e05c3a6}} 
+void \mbox{\hyperlink{class_node_a4ad4d58f8fadd4af8dff43aa3e05c3a6}{print}} (void)
+\begin{DoxyCompactList}\small\item\em Prints the \mbox{\hyperlink{class_node}{Node}} objects in the form of P(x, y). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_node_a7a63badfdc427e870618be0ca7c2cce6}\label{class_node_a7a63badfdc427e870618be0ca7c2cce6}} 
+\mbox{\hyperlink{class_node}{Node}} \& \mbox{\hyperlink{class_node_a7a63badfdc427e870618be0ca7c2cce6}{operator+=}} (const \mbox{\hyperlink{class_node}{Node}} \&other\+Node)
+\begin{DoxyCompactList}\small\item\em An operator overloading to sum two differents \mbox{\hyperlink{class_node}{Node}} objects. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_node_aff1262b072a1d6033e8131d9bfd43ef9}\label{class_node_aff1262b072a1d6033e8131d9bfd43ef9}} 
+\mbox{\hyperlink{class_node}{Node}} \mbox{\hyperlink{class_node_aff1262b072a1d6033e8131d9bfd43ef9}{operator$\ast$}} (double d) const
+\begin{DoxyCompactList}\small\item\em An operator overloading to multiply coordinates with same literal. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_node_a35d715e24587e6396631e1c328b62f4b}\label{class_node_a35d715e24587e6396631e1c328b62f4b}} 
+\mbox{\hyperlink{class_node}{Node}} \& \mbox{\hyperlink{class_node_a35d715e24587e6396631e1c328b62f4b}{operator$\ast$=}} (double d)
+\begin{DoxyCompactList}\small\item\em An operator overloading to multiply coordinates with same literal and assign result to a new \mbox{\hyperlink{class_node}{Node}} object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_node_ad36e0434a2eed408b6bf10dbf1182f75}\label{class_node_ad36e0434a2eed408b6bf10dbf1182f75}} 
+\mbox{\hyperlink{class_node}{Node}} \mbox{\hyperlink{class_node_ad36e0434a2eed408b6bf10dbf1182f75}{operator/}} (double d) const
+\begin{DoxyCompactList}\small\item\em An operator overloading to divide coordinates with same literal. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_node_a909e0eb0b8930ec544ede90c82a23652}\label{class_node_a909e0eb0b8930ec544ede90c82a23652}} 
+\mbox{\hyperlink{class_node}{Node}} \& \mbox{\hyperlink{class_node_a909e0eb0b8930ec544ede90c82a23652}{operator/=}} (double d)
+\begin{DoxyCompactList}\small\item\em An operator overloading to divide coordinates with same literal and assign result to a new \mbox{\hyperlink{class_node}{Node}} object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_node_aa0840c3cb5c7159be6d992adecd2097c}\label{class_node_aa0840c3cb5c7159be6d992adecd2097c}} 
+\mbox{\hyperlink{class_node_aa0840c3cb5c7159be6d992adecd2097c}{$\sim$\+Node}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_node_a0cf3374865c171a6d862bc6a18125905}\label{class_node_a0cf3374865c171a6d862bc6a18125905}} 
+std\+::ostream \& \mbox{\hyperlink{class_node_a0cf3374865c171a6d862bc6a18125905}{operator$<$$<$}} (std\+::ostream \&, const \mbox{\hyperlink{class_node}{Node}} \&)
+\begin{DoxyCompactList}\small\item\em A friend function to use cout object with \mbox{\hyperlink{class_node}{Node}} class object directly. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_node_a18d3a7cfb776a47265d4d6060a9fa311}\label{class_node_a18d3a7cfb776a47265d4d6060a9fa311}} 
+bool \mbox{\hyperlink{class_node_a18d3a7cfb776a47265d4d6060a9fa311}{operator==}} (const \mbox{\hyperlink{class_node}{Node}} \&, const \mbox{\hyperlink{class_node}{Node}} \&)
+\begin{DoxyCompactList}\small\item\em An operator overloading to compare two objects whether they are equal. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Stores for every points, X and Y coordinates. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/brkn/\+Desktop/oop\+\_\+project/Node.\+h\item 
+/home/brkn/\+Desktop/oop\+\_\+project/Node.\+cpp\end{DoxyCompactItemize}

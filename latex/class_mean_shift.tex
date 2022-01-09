@@ -1,0 +1,49 @@
+\hypertarget{class_mean_shift}{}\doxysection{Mean\+Shift Class Reference}
+\label{class_mean_shift}\index{MeanShift@{MeanShift}}
+
+
+{\ttfamily \#include $<$Mean\+Shift.\+h$>$}
+
+
+
+Inheritance diagram for Mean\+Shift\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=146pt]{class_mean_shift__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Mean\+Shift\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=146pt]{class_mean_shift__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_mean_shift_aa88efe14c2885f0f95e3562dad3a6a9e}\label{class_mean_shift_aa88efe14c2885f0f95e3562dad3a6a9e}} 
+\mbox{\hyperlink{class_mean_shift_aa88efe14c2885f0f95e3562dad3a6a9e}{Mean\+Shift}} (std\+::string dir=\char`\"{}Data not found...\char`\"{})
+\begin{DoxyCompactList}\small\item\em Constructor\+: Inherits from \mbox{\hyperlink{class_clustering}{Clustering}} class sends the directory of input data. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_mean_shift_ab561c174aa89c8da7b1681238cc6205f}\label{class_mean_shift_ab561c174aa89c8da7b1681238cc6205f}} 
+void \mbox{\hyperlink{class_mean_shift_ab561c174aa89c8da7b1681238cc6205f}{mean\+Shift}} (double)
+\begin{DoxyCompactList}\small\item\em Main funciton for meanshift process. Bandwidth as an input for that function, we can define the bandwidth as radius for the searching area. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_mean_shift_a9f48aea1824d2c3810b751ac1e0c4b1f}\label{class_mean_shift_a9f48aea1824d2c3810b751ac1e0c4b1f}} 
+\mbox{\hyperlink{class_node}{Node}} \mbox{\hyperlink{class_mean_shift_a9f48aea1824d2c3810b751ac1e0c4b1f}{shift\+Node}} (const \mbox{\hyperlink{class_node}{Node}} \&, const std\+::vector$<$ \mbox{\hyperlink{class_node}{Node}} $>$ \&, double)
+\begin{DoxyCompactList}\small\item\em shift\+Node functions is the utility funtions for the meanshift process. Every nodes after calculation specify a total weight for itself. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_mean_shift_a80a8cc794e052189dc34ca0f91ae756b}\label{class_mean_shift_a80a8cc794e052189dc34ca0f91ae756b}} 
+\mbox{\hyperlink{class_mean_shift_a80a8cc794e052189dc34ca0f91ae756b}{$\sim$\+Mean\+Shift}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Meanshift class to apply meanshift clustering approaches. Meanshift class inherits general clustering methods from \mbox{\hyperlink{class_clustering}{Clustering}} class. Original points are the input for this class and after process shifted points are initialize to \mbox{\hyperlink{class_clustering}{Clustering}} object attributes. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/brkn/\+Desktop/oop\+\_\+project/Mean\+Shift.\+h\item 
+/home/brkn/\+Desktop/oop\+\_\+project/Mean\+Shift.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,33 @@
+\hypertarget{class_edge}{}\doxysection{Edge Class Reference}
+\label{class_edge}\index{Edge@{Edge}}
+
+
+{\ttfamily \#include $<$Edge.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_edge_a8d39a24320742894aebf5436b819a173}\label{class_edge_a8d39a24320742894aebf5436b819a173}} 
+\mbox{\hyperlink{class_edge_a8d39a24320742894aebf5436b819a173}{Edge}} (const \mbox{\hyperlink{class_node}{Node}} \&, const \mbox{\hyperlink{class_node}{Node}} \&)
+\begin{DoxyCompactList}\small\item\em Constructor\+: Initialize \mbox{\hyperlink{class_node}{Node}} objects. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_edge_a44c428fa82942012931a8d654d6f1de4}\label{class_edge_a44c428fa82942012931a8d654d6f1de4}} 
+double \mbox{\hyperlink{class_edge_a44c428fa82942012931a8d654d6f1de4}{euclidean\+Distance}} (void)
+\begin{DoxyCompactList}\small\item\em Returns distance between two Nodes. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_edge_ad283a63304d401f6c280aab007011afc}\label{class_edge_ad283a63304d401f6c280aab007011afc}} 
+double \mbox{\hyperlink{class_edge_ad283a63304d401f6c280aab007011afc}{gaussian\+Kernel}} (double)
+\begin{DoxyCompactList}\small\item\em Calculates the gaussian kernel that these two \mbox{\hyperlink{class_node}{Node}} create. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_edge_a559a98a5dc804b0cab4adc03fb2b3b2e}\label{class_edge_a559a98a5dc804b0cab4adc03fb2b3b2e}} 
+\mbox{\hyperlink{class_node}{Node}} \mbox{\hyperlink{class_edge_a559a98a5dc804b0cab4adc03fb2b3b2e}{get\+Parent}} (void) const
+\begin{DoxyCompactList}\small\item\em Returns first \mbox{\hyperlink{class_node}{Node}} as Parent \mbox{\hyperlink{class_node}{Node}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_edge_a583b696ee736e02b5a3fc14f1c3744fb}\label{class_edge_a583b696ee736e02b5a3fc14f1c3744fb}} 
+\mbox{\hyperlink{class_node}{Node}} \mbox{\hyperlink{class_edge_a583b696ee736e02b5a3fc14f1c3744fb}{get\+Child}} (void) const
+\begin{DoxyCompactList}\small\item\em Returns second \mbox{\hyperlink{class_node}{Node}} as Child \mbox{\hyperlink{class_node}{Node}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Stores two \mbox{\hyperlink{class_node}{Node}} objects using compositon principle. Calculates weight and gaussian kernel functionalities, and to use in Kruskal algorithm first \mbox{\hyperlink{class_node}{Node}} named as Parent and second is Child \mbox{\hyperlink{class_node}{Node}}. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/brkn/\+Desktop/oop\+\_\+project/Edge.\+h\item 
+/home/brkn/\+Desktop/oop\+\_\+project/Edge.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,60 @@
+\hypertarget{class_clustering}{}\doxysection{Clustering Class Reference}
+\label{class_clustering}\index{Clustering@{Clustering}}
+
+
+{\ttfamily \#include $<$Clustering.\+h$>$}
+
+
+
+Inheritance diagram for Clustering\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=146pt]{class_clustering__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_clustering_a82ef910944df5fc0b5ba285a2d42b089}\label{class_clustering_a82ef910944df5fc0b5ba285a2d42b089}} 
+\mbox{\hyperlink{class_clustering_a82ef910944df5fc0b5ba285a2d42b089}{Clustering}} (std\+::string dir=\char`\"{}Data not found...\char`\"{})
+\begin{DoxyCompactList}\small\item\em Constructor\+: initizlize the data directory to get input coordinates. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_clustering_a8a47785bbb348856f48b8376f3e346d8}\label{class_clustering_a8a47785bbb348856f48b8376f3e346d8}} 
+void \mbox{\hyperlink{class_clustering_a8a47785bbb348856f48b8376f3e346d8}{read\+Txt\+\_\+\+File}} (void)
+\begin{DoxyCompactList}\small\item\em Reads the 2D data coordinates from .txt files and initialize them to the loaded points and shifted points. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_clustering_afc1b372d6a075083d93d80c2c5d95803}\label{class_clustering_afc1b372d6a075083d93d80c2c5d95803}} 
+void \mbox{\hyperlink{class_clustering_afc1b372d6a075083d93d80c2c5d95803}{print}} (void) const
+\begin{DoxyCompactList}\small\item\em Prints the input data with original coordinates. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_clustering_ac3e14b5f87f089780c554d80764d7a8d}\label{class_clustering_ac3e14b5f87f089780c554d80764d7a8d}} 
+void \mbox{\hyperlink{class_clustering_ac3e14b5f87f089780c554d80764d7a8d}{build\+Cluster}} (void)
+\begin{DoxyCompactList}\small\item\em After meanshift process this function arranges the original points for the different clusters by using shifted point informations. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_clustering_ab215abddb025c534615b3382f2ea496c}\label{class_clustering_ab215abddb025c534615b3382f2ea496c}} 
+int \mbox{\hyperlink{class_clustering_ab215abddb025c534615b3382f2ea496c}{get\+Num\+Clusters}} (void)
+\begin{DoxyCompactList}\small\item\em Return the number of different clusters. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_clustering_a591611e5be5d22cc8d09404894199f4d}\label{class_clustering_a591611e5be5d22cc8d09404894199f4d}} 
+list$<$ \mbox{\hyperlink{class_graph}{Graph}} $>$ \mbox{\hyperlink{class_clustering_a591611e5be5d22cc8d09404894199f4d}{get\+Clusters}} (void) const
+\begin{DoxyCompactList}\small\item\em Return a list which stores the different clusters with their coordinates. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_clustering_ac8ca274045750b291f8f7d4118679587}\label{class_clustering_ac8ca274045750b291f8f7d4118679587}} 
+void \mbox{\hyperlink{class_clustering_ac8ca274045750b291f8f7d4118679587}{write\+Txt\+\_\+\+File}} (void)
+\begin{DoxyCompactList}\small\item\em To plot the graph first we should write resultant clusters into a txt file. This funtion have to use before plot execution. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_clustering_a3dbbd2bd3f6c97efc003c283f228e8c6}\label{class_clustering_a3dbbd2bd3f6c97efc003c283f228e8c6}} 
+void \mbox{\hyperlink{class_clustering_a3dbbd2bd3f6c97efc003c283f228e8c6}{plot\+Cluster}} (void)
+\begin{DoxyCompactList}\small\item\em To plot the diagram according results. This function reads the information from the result folder cluster by cluster. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_clustering_a05e2e1c87ef17a8593bccf7e0b0088e4}\label{class_clustering_a05e2e1c87ef17a8593bccf7e0b0088e4}} 
+std\+::vector$<$ \mbox{\hyperlink{class_node}{Node}} $>$ \mbox{\hyperlink{class_clustering_a05e2e1c87ef17a8593bccf7e0b0088e4}{loaded\+\_\+data}}
+\begin{DoxyCompactList}\small\item\em Original input data. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_clustering_aef7f809b13b15d0508528973d15a39d8}\label{class_clustering_aef7f809b13b15d0508528973d15a39d8}} 
+std\+::vector$<$ \mbox{\hyperlink{class_node}{Node}} $>$ \mbox{\hyperlink{class_clustering_aef7f809b13b15d0508528973d15a39d8}{shifted\+\_\+points}}
+\begin{DoxyCompactList}\small\item\em Proccessed data after meanshift functions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_clustering}{Clustering}} class for classical manupliation about input, output and results. Getting inputs from the system printing current cluster and plotting the colored sheme of different clusters. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/brkn/\+Desktop/oop\+\_\+project/Clustering.\+h\item 
+/home/brkn/\+Desktop/oop\+\_\+project/Clustering.\+cpp\end{DoxyCompactItemize}
